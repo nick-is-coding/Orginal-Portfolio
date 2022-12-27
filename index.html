@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages.css">
+    <title>folio</title>
+</head>
+<body>
+<!-- Toggle Light/Dark Mode -->
+    <div class="theme-panel">
+        <div class="theme-body">
+            <span>Change Theme</span>
+            <div class="btn-group">
+                <button class="switcher-btn active">LIGHT</button>
+                <button class="switcher-btn">DARK</button>
+            </div>
+            <button class="theme-tab">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
+
+    <main class="site-wrapper"> 
+        <header class="site-header">
+            <nav class="navbar">
+                <div class="brand-logo">
+                    <a href="/"><h2>folio.</h2></a>
+                </div>
+                <div class="navbar-nav">
+                    <ul class="ul-defaults-none main-menu">
+                        <li class="nav-item">Home</li>
+                        <li class="nav-item" data-open="about">About Me</li>
+                        <li class="nav-item" data-open="contact">Contact</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<!-- Hero Section -->
+
+<section class="hero-bg">
+    <div class="container">
+        <div class="hero-content">
+            <div class="code-icon">
+                <i class="fas fa-code"></i>
+            </div> 
+            <h2 class="header-large">Code. Eat. Sleep.</h2>
+            <div class="sub-header">
+                I create meaningful solutions for your brands and products.
+                <br>
+                Give your customers the best experience possible.
+            </div>
+            <div class="btn btn-primary round-pill">
+                <a href="#" data-open="contact">Let's talk now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+<!-- ABOUT page -->
+    <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
+        <header class="modal-header">
+            <h3>ABOUT PAGE</h3>
+            <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+            <div>
+                <div class="img-wrapper">
+                <img src="./assets/images/img4.jpg" alt="head shot">
+                </div>
+            </div>
+            <h2>Nick Hoang</h2>
+            <p>text 1</p>
+            <p>text 2</p>
+            <div>
+                <div>Email Me:</div>
+                <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
+            </div>
+        </div>
+    </div>
+<!-- CONTACT page -->
+    <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
+        <header class="modal-header">
+            <h3>CONTACT PAGE</h3>
+            <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+            <div>
+                <div class="img-wrapper">
+                <img src="./assets/images/img4.jpg" alt="head shot">
+                </div>
+            </div>
+            <h2>Nick Hoang</h2>
+            <p>text 1</p>
+            <p>text 2</p>
+            <div>
+                <div>Email Me:</div>
+                <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
