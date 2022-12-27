@@ -26,45 +26,59 @@
         </div>
     </div>
 
-    <main class="site-wrapper"> 
-        <header class="site-header">
-            <nav class="navbar">
-                <div class="brand-logo">
-                    <a href="/"><h2>folio.</h2></a>
-                </div>
-                <div class="navbar-nav">
-                    <ul class="ul-defaults-none main-menu">
-                        <li class="nav-item">Home</li>
-                        <li class="nav-item" data-open="about">About Me</li>
-                        <li class="nav-item" data-open="contact">Contact</li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-<!-- Hero Section -->
-
-<section class="hero-bg">
-    <div class="container">
-        <div class="hero-content">
-            <div class="code-icon">
-                <i class="fas fa-code"></i>
-            </div> 
-            <h2 class="header-large">Code. Eat. Sleep.</h2>
-            <div class="sub-header">
-                I create meaningful solutions for your brands and products.
-                <br>
-                Give your customers the best experience possible.
+<main class="site-wrapper"> 
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="brand-logo">
+                <a href="/"><h2>folio.</h2></a>
             </div>
-            <div class="btn btn-primary round-pill">
-                <a href="#" data-open="contact">Let's talk now</a>
+            <div class="navbar-nav">
+                <ul class="ul-defaults-none main-menu">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item" data-open="about">About Me</li>
+                    <li class="nav-item" data-open="contact">Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+        <div class="container">
+            <div class="hero-content">
+                <div class="code-icon">
+                    <i class="fas fa-code"></i>
+                </div> 
+                <h2 class="header-large">Code. Eat. Sleep.</h2>
+                <div class="sub-header">
+                    I create meaningful solutions for your brands and products.
+                    <br>
+                    Give your customers the best experience possible.
+                </div>
+                <div class="btn btn-primary round-pill">
+                    <a href="#" data-open="contact">Let's talk now</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="portfolio-section">
+        <div class="container search-container">
+            <label for="search">
+                <input autocomplete="off" id="search" type="text" class="search-input" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </label>
+            <ul class="portfolio-filter-nav ul-defaults-none">
+                <li class="filter-link">All Work</li>
+                <li class="filter-link">Web Development</li>
+                <li class="filter-link">App Development</li>
+                <li class="filter-link">UI Design</li>
+            </ul>
+        </div>
 
-    </main>
-<!-- ABOUT page -->
+    </section>
+
+        <!-- ABOUT page -->
     <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
         <header class="modal-header">
             <h3>ABOUT PAGE</h3>
@@ -85,7 +99,8 @@
             </div>
         </div>
     </div>
-<!-- CONTACT page -->
+
+    <!-- CONTACT page -->
     <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
         <header class="modal-header">
             <h3>CONTACT PAGE</h3>
@@ -107,7 +122,7 @@
         </div>
     </div>
 
-
+</main>
 
     <script src="js/main.js"></script>
 </body>
