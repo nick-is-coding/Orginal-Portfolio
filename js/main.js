@@ -25,9 +25,7 @@ const closeModal = document.querySelectorAll(modalClose);
 const setActive = (elm, selector) => {
     if (document.querySelector(`${selector}.${active}`) !== null) {
         document.querySelector(`${selector}.${active}`).classList.remove(active);
-    } else {
-        elm.classList.add(active);
-    }
+    } elm.classList.add(active);
 };
 
 const setTheme = (val) => {
@@ -39,6 +37,18 @@ const setTheme = (val) => {
         localStorage.setItem(theme, light);
     }
 };
+
+if (currentTheme) {
+    root.setAttribute(dataTheme, currentTheme);
+    switcher.forEach((btn) => {
+        btn.classList.remove(active);
+    });
+    if (currentTheme === dark) {
+        switcher[1].classList.add(active);
+    } else {
+        switcher[0].classList.add(active);
+    }
+}
 
 toggleTheme.addEventListener('click', function() {
     const tab = this.parentElement.parentElement;
