@@ -69,106 +69,317 @@
                 <i class="fas fa-search"></i>
             </label>
             <ul class="portfolio-filter-nav ul-defaults-none">
-                <li class="filter-link">All Work</li>
-                <li class="filter-link">Web Development</li>
-                <li class="filter-link">App Development</li>
-                <li class="filter-link">UI Design</li>
+                <li data-filter="all" class="filter-link">All Work</li>
+                <li data-filter="web" class="filter-link">Web Development</li>
+                <li data-filter="app" class="filter-link">App Development</li>
+                <li data-filter="ui" class="filter-link">UI Design</li>
             </ul>
         </div>
 
         <div class="portfolio-grid">
 
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-item="web" data-open="web-1">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-1.jpg" alt="portfolio-icon">
-                    <a href="#" class="card-popup-box">
+                    <div class="card-popup-box">
                         <div>Web Development</div>
                         <h3>Food Website</h3>
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-item="web" data-open="web-2">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-2.jpg" alt="portfolio-icon">
-                    <a href="#" class="card-popup-box">
+                    <div class="card-popup-box">
                         <div>Web Development</div>
-                        <h3>Food Website</h3>
-                    </a>
+                        <h3>Skate Website</h3>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-item="web" data-open="web-3">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-3.jpg" alt="portfolio-icon">
-                    <a href="#" class="card-popup-box">
+                    <div class="card-popup-box">
                         <div>Web Development</div>
-                        <h3>Food Website</h3>
-                    </a>
+                        <h3>Breaking Website</h3>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-item="app" data-open="app-1">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-4.jpg" alt="portfolio-icon">
-                    <a href="#" class="card-popup-box">
-                        <div>Web Development</div>
-                        <h3>Food Website</h3>
-                    </a>
+                    <div class="card-popup-box">
+                        <div>App Development</div>
+                        <h3>Cool App</h3>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-item="app" data-open="app-2">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-5.jpg" alt="portfolio-icon">
-                    <a href="#" class="card-popup-box">
-                        <div>Web Development</div>
-                        <h3>Food Website</h3>
-                    </a>
+                    <div class="card-popup-box">
+                        <div>App Development</div>
+                        <h3>Flappy Bird</h3>
+                    </div>
                 </div>
             </div>
+            <div class="portfolio-card" data-item="app" data-open="app-3">
+                <div class="card-body">
+                    <img src="./assets/images/portfolio-6.jpg" alt="portfolio-icon">
+                    <div class="card-popup-box">
+                        <div>App Development</div>
+                        <h3>Jumping App</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card" data-item="ui" data-open="ui-1">
+                <div class="card-body">
+                    <img src="./assets/images/portfolio-7.jpg" alt="portfolio-icon">
+                    <div class="card-popup-box">
+                        <div>UI Design</div>
+                        <h3>Fantastic Design</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card" data-item="ui" data-open="ui-2">
+                <div class="card-body">
+                    <img src="./assets/images/portfolio-8.jpg" alt="portfolio-icon">
+                    <div class="card-popup-box">
+                        <div>UI Design</div>
+                        <h3>Fun Designs</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Review Section -->
+    <section class="reviews">
+        <div class="review-title">What People Say</div>
+        <h2 class="header-medium">Trusted by Clients.</h2>
+        <div class="review-preview">
+            <img src="./assets/images/cube.png" alt="cube">
+        </div>
 
+        <div class="review-carousel">
+            <div class="review-item">
+                <div class="review-text">
+                    #1 Folio Designer is a clean and creative landing page. Ya know it!! 
+                </div>
+                <div class="review-author">
+                    <div class="avatar">
+                        <img src="./assets/images/ava-1.jpg" alt="avatar">
+                    </div>
+                    <div class="details">
+                        <div>Nick Hoang</div>
+                        <div>Skate World Wide</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-ctrl-container">
+            <button>
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button>
+                <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
 
     </section>
 
-        <!-- ABOUT page -->
+    <!-- Modals -->
+    <!-- ABOUT page -->
     <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
-        <header class="modal-header">
-            <h3>ABOUT PAGE</h3>
-            <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-            <div>
-                <div class="img-wrapper">
-                <img src="./assets/images/img4.jpg" alt="head shot">
+        <div class="container-fluid">
+            <header class="modal-header">
+                <h3>ABOUT PAGE</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div>
+                    <div class="img-wrapper">
+                    <img src="./assets/images/img4.jpg" alt="head shot">
+                    </div>
                 </div>
-            </div>
-            <h2>Nick Hoang</h2>
-            <p>text 1</p>
-            <p>text 2</p>
-            <div>
-                <div>Email Me:</div>
-                <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
+                <h2>Nick Hoang</h2>
+                <p>text 1</p>
+                <p>text 2</p>
+                <div>
+                    <div>Email Me:</div>
+                    <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- CONTACT page -->
     <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
-        <header class="modal-header">
-            <h3>CONTACT PAGE</h3>
-            <i class="fas fa-times" data-close></i>
-        </header>
-        <div class="modal-body">
-            <div>
-                <div class="img-wrapper">
-                <img src="./assets/images/img4.jpg" alt="head shot">
+        <div class="container-fluid">
+            <header class="modal-header">
+                <h3>CONTACT PAGE</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div>
+                    <div class="img-wrapper">
+                    <img src="./assets/images/img4.jpg" alt="head shot">
+                    </div>
+                </div>
+                <h2>Nick Hoang</h2>
+                <p>text 1</p>
+                <p>text 2</p>
+                <div>
+                    <div>Email Me:</div>
+                    <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
                 </div>
             </div>
-            <h2>Nick Hoang</h2>
-            <p>text 1</p>
-            <p>text 2</p>
-            <div>
-                <div>Email Me:</div>
-                <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Popup Modals -->
+    <div id="web-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>Web Project 1</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-1.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="web-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>Web Project 2</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-2.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="web-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>Web Project 3</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-3.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>App Project 1</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-4.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>App Project 2</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-5.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>App Project 3</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-6.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ui-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>UI Project 1</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-7.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ui-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h3>UI Project 2</h3>
+                <i class="fas fa-times" data-close></i>
+            </header>
+            <div class="modal-body">
+                <div class="img-wrapper">
+                    <img src="./assets/images/portfolio-8.jpg" alt="portfolio-image">
+                </div>
+                <div class="text-wrapper">
+                    <p><strong>My first awesome website</strong></p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                    <p>Lorem upsum dolor sit amet ya noas ashuaod asdadasda. asdhad. asasawW assad.</p>
+                </div>
             </div>
         </div>
     </div>
