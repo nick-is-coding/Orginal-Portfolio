@@ -229,19 +229,33 @@
                 <h3>ABOUT PAGE</h3>
                 <i class="fas fa-times" data-close></i>
             </header>
-            <div class="modal-body">
-                <div>
-                    <div class="img-wrapper">
+            <div class="modal-body">  
+                <div class="img-wrapper">
                     <img src="./assets/images/img4.jpg" alt="head shot">
+                </div>
+                <div class="about-text">
+                    <h2 class="header-md">Nick Hoang</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet risus nullam eget felis eget nunc lobortis mattis. </p>
+                    <p>Dignissim sodales ut eu sem. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Mollis aliquam ut porttitor leo a diam.</p>
+                    <div class="contact-me-block">
+                        <div>Email Me:</div>
+                        <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
                     </div>
                 </div>
-                <h2>Nick Hoang</h2>
-                <p>text 1</p>
-                <p>text 2</p>
-                <div>
-                    <div>Email Me:</div>
-                    <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
-                </div>
+            </div>
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-codepen"></i></li>
+                    <li><i class="fab fa-dev"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-vuejs"></i></li>
+                    <li><i class="fab fa-angular"></i></li>
+                    <li><i class="fab fa-node"></i></li>
+                    <li><i class="fab fa-aws"></i></li>
+                    <li><i class="fab fa-docker"></i></li>
+                    <li><i class="fab fa-android"></i></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -254,18 +268,18 @@
                 <i class="fas fa-times" data-close></i>
             </header>
             <div class="modal-body">
-                <div>
-                    <div class="img-wrapper">
-                    <img src="./assets/images/img4.jpg" alt="head shot">
-                    </div>
+                <div class="contact-text">
+                    <h2 class="header-md">Nick Hoang</h2>
+                    <div>Have a project or question? Send me a message!</div>
+                    <div>I will reply within 48 hours.</div>
                 </div>
-                <h2>Nick Hoang</h2>
-                <p>text 1</p>
-                <p>text 2</p>
-                <div>
-                    <div>Email Me:</div>
-                    <a href="mailto:nickjhoang@gmail.com">nickjhoang@gmail.com</a>
-                </div>
+                <form class="folio-form">
+                    <input class="form-control" name="name" type="text" placeholder="Name">
+                    <input class="form-control" name="email" type="email" placeholder="Email">
+                    <input class="form-control" name="subject" type="text" placeholder="Subject">
+                    <textarea class="form-control" name="message" id="" cols="30" rows="3" placeholder="Write your message here..."></textarea>
+                    <input type="submit" value="Send" class="btn btn-primary round-pill">
+                </form>
             </div>
         </div>
     </div>
@@ -419,5 +433,6 @@
 </main>
 
     <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>

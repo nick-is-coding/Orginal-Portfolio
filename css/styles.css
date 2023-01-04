@@ -192,7 +192,7 @@ i.fas.fa-search {
 }
 
 .card-body img {
-    width: 100%;
+    width: 255px;
     height: 255px;
     object-fit: cover;
     border-radius: 8px;
@@ -300,7 +300,7 @@ i.fas.fa-search {
     display: flex;
     justify-content: center;
     height: 250px;
-    margin: 200px 0;
+    margin: 200px 0 50px;
     pointer-events: none;
 }
 
@@ -354,14 +354,10 @@ opacity: 0.25;
     font-size: 18px;
     line-height: 1.5;
 }
+
 .details .company {
     color: #6b6b6b;
 }
-
-
-
-
-
 
 .main-menu { display: flex; }
 
@@ -392,7 +388,7 @@ opacity: 0.25;
     transition: all 0.35s ease-in;
     visibility: hidden;
     opacity: 0;
-    z-index: 1000;
+    z-index: 99;
 }
 
 .modal-dialog {

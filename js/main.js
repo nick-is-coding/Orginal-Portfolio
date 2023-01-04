@@ -121,15 +121,22 @@ for (const elm of closeModal) {
 
 // Modal
 document.addEventListener('click', (e) => {
-    console.log(e.target, document.querySelector('.modal.is-visible'));
     if (e.target === document.querySelector('.modal.is-visible')) {
         document.querySelector('.modal.is-visible').classList.remove(isVisible);
     }
 });
 
 document.addEventListener('keyup', (e) => {
-    console.log(e.key);
     if (e.key === 'Escape') {
         document.querySelector('.modal.is-visible').classList.remove(isVisible);
     }
 })
+
+const elmsDisplayed = getComputedStyle(root).getPropertyValue('--marquee-elms-displayed');
+const marqueeContent = document.querySelector('ul.marquee-content');
+
+root.style.setProperty('--marquee-elms', marqueeContent.children.length);
+
+for (let i = 0; i < elmsDisplayed; i += 1) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
