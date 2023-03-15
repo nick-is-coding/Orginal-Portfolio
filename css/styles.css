@@ -299,7 +299,7 @@ i.fas.fa-search {
 .review-carousel {
     display: flex;
     justify-content: center;
-    height: 250px;
+    height: 500px;
     margin: 200px 0 50px;
     pointer-events: none;
 }
@@ -429,20 +429,21 @@ opacity: 0.25;
 }
 
 .modal-body .img-wrapper {
-    max-width: 200px;
     margin-right: 0.75rem;
+    max-width: 370px;
 }
 
 .modal-body .img-wrapper img {
-    width: 100%;
     border-radius: 8px;
     object-fit: cover;
-    height: 200px;
+    height: 230px;
 }
 
 .modal-body {
     display: flex;
     align-items: center;
+    overflow-y: scroll;
+    max-height: 70vh;
 }
 
 [data-animation="zoomInOUt"].full-site-modal {
@@ -466,4 +467,11 @@ opacity: 0.25;
 [data-animation="zoomInOUt"].full-site-modal.is-visible,
 [data-animation="slideInOutTop"].is-visible .modal-dialog {
     transform: none;
+}
+
+@media (max-width: 600px) {
+  .modal-body{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
