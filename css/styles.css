@@ -406,6 +406,7 @@ opacity: 0.25;
     display: flex;
     padding-bottom: 1rem;
     justify-content: space-between;
+    min-width: 370px;
 }
 
 .modal-dialog .modal-header h3 {
