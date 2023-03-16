@@ -1,6 +1,7 @@
 :root {
     --marquee-width: 80vw;
     --marquee-height: 15vh;
+    min-width: 450px;
     --marquee-elms-displayed: 5;
     --marquee-elms: 10;
     --marquee-elms-width: calc(var(--marquee-width) / var(--marquee-elms-displayed));
@@ -14,6 +15,7 @@ header,
 main,
 nav {
     display: block;
+    min-width: 450px;
 }
 
 *, *::before, *::after {
